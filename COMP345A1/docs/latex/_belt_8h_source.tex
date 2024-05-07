@@ -1,0 +1,28 @@
+\doxysection{Belt.\+h}
+\hypertarget{_belt_8h_source}{}\label{_belt_8h_source}\index{src/classes/Belt/Belt.h@{src/classes/Belt/Belt.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Roger\ Sioufi\ on\ 2024-\/02-\/18.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ COMP345A1\_BELT\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ COMP345A1\_BELT\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}../Item/Item.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <stdexcept>}\ \textcolor{comment}{//\ For\ std::runtime\_error}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <algorithm>}\ \textcolor{comment}{//\ For\ std::find}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_belt}{Belt}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_item}{Item}}\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::vector<EnhancementType>\ allowedEnhancements;}
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_belt_ad28d5fbbf5565cdeb1721d42215b0fe5}{Belt}}(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_enchantment}{Enchantment}}\&\ enchantment);}
+\DoxyCodeLine{00035\ \ \ \ \ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_belt_a8d177e9d03aa6100e2d8d2fa7cb098bb}{getType}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ COMP345A1\_BELT\_H}}
+
+\end{DoxyCode}

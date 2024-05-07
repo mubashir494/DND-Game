@@ -1,0 +1,99 @@
+\doxysection{Belt Class Reference}
+\hypertarget{class_belt}{}\label{class_belt}\index{Belt@{Belt}}
+
+
+Represents a belt item.  
+
+
+
+
+{\ttfamily \#include $<$Belt.\+h$>$}
+
+Inheritance diagram for Belt\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_belt}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_belt_ad28d5fbbf5565cdeb1721d42215b0fe5}{Belt}} (const std\+::string \&name, const \mbox{\hyperlink{struct_enchantment}{Enchantment}} \&enchantment)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_belt}{Belt} object. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_belt_a8d177e9d03aa6100e2d8d2fa7cb098bb}{get\+Type}} () const override
+\begin{DoxyCompactList}\small\item\em Get the type of the item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_item}{Item}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_item_ae1e71269dc3014c73adb9cc37d03d79e}{Item}} (const string \&name, const \mbox{\hyperlink{struct_enchantment}{Enchantment}} \&enchantment)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_item}{Item} object. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Item} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{class_item}{Item} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_enchantment}{Enchantment}} \mbox{\hyperlink{class_item_a4803c9ffa87f8d796ebbf0e6e8a30b41}{get\+Enchantment}} () const
+\begin{DoxyCompactList}\small\item\em Get \doxylink{struct_enchantment}{Enchantment} type of the item. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_item_a5e4095868ead0c681bc2e18b8507f735}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Function to return the name of the item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_item}{Item}}}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{class_item_aedf18baaa1539b9b3e6d2c0cec64e84d}{enchantment\+Type\+To\+String}} (Enhancement\+Type type)
+\begin{DoxyCompactList}\small\item\em Static Function to convert Enhancement Type type to String. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_item}{Item}}}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries name}
+\item 
+\mbox{\hyperlink{struct_enchantment}{Enchantment}} {\bfseries enchantment}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a belt item. 
+
+Game Rules\+: \doxylink{class_belt}{Belt} may enhance Constitution and Strength. Design\+: Inherits from \doxylink{class_item}{Item} and specifies Belt-\/related functionality. Libraries\+: Inherits $<$string$>$ from \doxylink{_item_8h_source}{Item.\+h}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_belt_ad28d5fbbf5565cdeb1721d42215b0fe5}\label{class_belt_ad28d5fbbf5565cdeb1721d42215b0fe5} 
+\index{Belt@{Belt}!Belt@{Belt}}
+\index{Belt@{Belt}!Belt@{Belt}}
+\doxysubsubsection{\texorpdfstring{Belt()}{Belt()}}
+{\footnotesize\ttfamily Belt\+::\+Belt (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const \mbox{\hyperlink{struct_enchantment}{Enchantment}} \&}]{enchantment }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{class_belt}{Belt} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the belt. \\
+\hline
+{\em enchantment} & The enchantment applied to the belt. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_belt_a8d177e9d03aa6100e2d8d2fa7cb098bb}\label{class_belt_a8d177e9d03aa6100e2d8d2fa7cb098bb} 
+\index{Belt@{Belt}!getType@{getType}}
+\index{getType@{getType}!Belt@{Belt}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily std\+::string Belt\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the type of the item. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string Returns the type of the item as a string. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_item_ada64eb4c181f0b583ff940c26e5b8370}{Item}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/classes/\+Belt/Belt.\+h\item 
+src/classes/\+Belt/Belt.\+cpp\end{DoxyCompactItemize}

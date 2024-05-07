@@ -1,0 +1,36 @@
+\doxysection{Item\+Container.\+h}
+\hypertarget{_item_container_8h_source}{}\label{_item_container_8h_source}\index{src/classes/ItemContainer/ItemContainer.h@{src/classes/ItemContainer/ItemContainer.h}}
+\mbox{\hyperlink{_item_container_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ COMP345A1\_ITEMCONTAINER\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ COMP345A1\_ITEMCONTAINER\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}../Item/Item.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_item_container}{ItemContainer}}\ \{}
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_item_container_a3ce79c8b4501fafc5ea369ef3b3c1bce}{ItemContainer}}();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_item_container_af88f67167a5496cd1e830664ef19b268}{\string~ItemContainer}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_item_container_a23e6a64362c8fa4b0555458814d07be6}{addItem}}(\mbox{\hyperlink{class_item}{Item}}*\ item);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_item}{Item}}*\ \mbox{\hyperlink{class_item_container_aa732f863c5acf5bdb96ee5c3004e878f}{getItem}}(\textcolor{keywordtype}{int}\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_item_container_a1857d62ad8d772464b445af953e8f9f4}{clear}}();}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_item_container_a87b021c576940f68c1c68d8cb6d20be4}{printItems}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_item_container_aad1d8ab352d23b4f7655d7271777d2cd}{getItemCount}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00076\ \ \ \ \ std::vector<Item*>\ items;\ }
+\DoxyCodeLine{00077\ \};}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ COMP345A1\_ITEMCONTAINER\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,37 @@
+\doxysection{src/classes/\+Character/\+Character.h File Reference}
+\hypertarget{_character_8h}{}\label{_character_8h}\index{src/classes/Character/Character.h@{src/classes/Character/Character.h}}
+
+
+Defines the base class for all characters in a Basic Fantasy RPG setting.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include "{}../\+Observer\+Pattern/\+Subject.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_character}{Character}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines the base class for all characters in a Basic Fantasy RPG setting. 
+
+This file contains the declaration of the \doxylink{class_character}{Character} class, which serves as the foundation for all character types in the game. It includes basic attributes, equipment handling, and the framework for derived attribute calculations.
+
+Game Rules Involved\+:
+\begin{DoxyItemize}
+\item Ability scores (Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma) impact various character capabilities.
+\item Hit Points represent the character\textquotesingle{}s health. They are determined by the character\textquotesingle{}s level and Constitution modifier.
+\item \doxylink{class_armor}{Armor} Class (AC) determines how difficult it is for enemies to hit the character in combat, affected by the equipped armor.
+\item Attack Bonus and Damage Bonus are derived from ability scores and affect combat effectiveness.
+\end{DoxyItemize}
+
+Design Brief\+: The \doxylink{class_character}{Character} class abstracts the common functionalities and attributes of all characters in the game. It uses virtual functions for attribute calculations to allow derived classes to implement specific rules and behaviors. This design promotes code reuse and flexibility, enabling easy extension for different character classes.
+
+Libraries Used\+:
+\begin{DoxyItemize}
+\item {\ttfamily \texorpdfstring{$<$}{<}string\texorpdfstring{$>$}{>}}\+: For representing character names and equipment in a human-\/readable format.
+\item {\ttfamily \texorpdfstring{$<$}{<}map\texorpdfstring{$>$}{>}}\+: To associate character attributes, modifiers, and equipment slots with their respective values and Items. Chosen for its efficient key-\/value storage and easy retrieval of character-\/related data. 
+\end{DoxyItemize}

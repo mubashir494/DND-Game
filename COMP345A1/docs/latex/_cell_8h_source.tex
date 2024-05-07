@@ -1,0 +1,40 @@
+\doxysection{Cell.\+h}
+\hypertarget{_cell_8h_source}{}\label{_cell_8h_source}\index{src/classes/Cell/Cell.h@{src/classes/Cell/Cell.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ hp\ on\ 12/02/2024.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ COMP345A1\_CELL\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ COMP345A1\_CELL\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_cell}{Cell}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{class_cell_a21d74a2efcb79c93e5649b06a50b7cf5}{State}}\{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ EMPTY,}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ EXIT,}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ START,}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ WALL,}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ OPPONENT,}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ CHARACTER,}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ CHEST,}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ DOOR}
+\DoxyCodeLine{00026\ \ \ \ \ \};}
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_cell_a394510643e8664cf12b5efaf5cb99f71}{Cell}}();}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_cell_a394510643e8664cf12b5efaf5cb99f71}{Cell}}(\mbox{\hyperlink{class_cell_a21d74a2efcb79c93e5649b06a50b7cf5}{State}}\ state);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_cell_a246d54ef2e569f97000fe94f5524e7ba}{\string~Cell}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_cell_adc1a24fd65b7966f77d2ab2eb3dcd290}{isWall}}();}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_cell_a21d74a2efcb79c93e5649b06a50b7cf5}{State}}\ \mbox{\hyperlink{class_cell_a919d7f376580bdca6d77c3beac4d364d}{getState}}();}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_cell_a927a3e5932063a24c00a750dddf66443}{setState}}(\mbox{\hyperlink{class_cell_a21d74a2efcb79c93e5649b06a50b7cf5}{State}}\ state);}
+\DoxyCodeLine{00058\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{class_cell_a21d74a2efcb79c93e5649b06a50b7cf5}{State}}\ currentState;}
+\DoxyCodeLine{00063\ \};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//COMP345A1\_CELL\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,18 @@
+﻿  CommandLineParser.cpp
+C:\CppUnit\include\cppunit\plugin\PlugInParameters.h(27,15): warning C4251: 'CppUnit::PlugInParameters::m_commandLine': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CppUnit::PlugInParameters'
+  (compiling source file 'CommandLineParser.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xstring(2337,7):
+  see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+C:\CppUnit\src\DllPlugInTester\CommandLineParser.cpp(71,24): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\CppUnit\src\DllPlugInTester\CommandLineParser.cpp(238,24): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  DllPlugInTester.cpp
+C:\CppUnit\include\cppunit\CompilerOutputter.h(138,15): warning C4251: 'CppUnit::CompilerOutputter::m_locationFormat': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CppUnit::CompilerOutputter'
+  (compiling source file 'DllPlugInTester.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xstring(2337,7):
+  see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+  Generating Code...
+  DllPlugInTester.vcxproj -> C:\CppUnit\src\DllPlugInTester\DebugDll\DllPlugInTesterd_dll.exe
+  Copying target to lib/
+          1 file(s) copied.

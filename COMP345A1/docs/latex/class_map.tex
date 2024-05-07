@@ -1,0 +1,100 @@
+\doxysection{Map Class Reference}
+\hypertarget{class_map}{}\label{class_map}\index{Map@{Map}}
+
+
+Container class for the Cells.  
+
+
+
+
+{\ttfamily \#include $<$Map.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_map_a8497952fd6e1f0584d868e6ceb97d42d}{Map}} (int width, int height)
+\begin{DoxyCompactList}\small\item\em Accepts width and height of the map and initializes a two dimensional array with Wall arround. \end{DoxyCompactList}\item 
+\Hypertarget{class_map_aa403fbe09394ccf39747588f5168e3b2}\label{class_map_aa403fbe09394ccf39747588f5168e3b2} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Map} ()
+\begin{DoxyCompactList}\small\item\em Responsible for destructing the \doxylink{class_map}{Map} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_map_a29b53bf7c03e9f5fccb6079cb459bba5}{Place}} (int x, int y, char item)
+\begin{DoxyCompactList}\small\item\em Places the item on the inputted coordinates. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_map_ae97c4ead268b89b62e815511baf51ab9}{is\+Valid}} ()
+\item 
+void \mbox{\hyperlink{class_map_a1cefc1b8ed6692667e2019f64acc0f5a}{print\+Map}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Container class for the Cells. 
+
+Game Rules\+: Creates a \doxylink{class_map}{Map} with walls around, dungeon master can place Starting point,Ending point,Opponent,etc and design the map
+
+Libraries\+: $<$queue$>$ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_map_a8497952fd6e1f0584d868e6ceb97d42d}\label{class_map_a8497952fd6e1f0584d868e6ceb97d42d} 
+\index{Map@{Map}!Map@{Map}}
+\index{Map@{Map}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{Map()}{Map()}}
+{\footnotesize\ttfamily Map\+::\+Map (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+Accepts width and height of the map and initializes a two dimensional array with Wall arround. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & \\
+\hline
+{\em height} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_map_ae97c4ead268b89b62e815511baf51ab9}\label{class_map_ae97c4ead268b89b62e815511baf51ab9} 
+\index{Map@{Map}!isValid@{isValid}}
+\index{isValid@{isValid}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}}
+{\footnotesize\ttfamily bool Map\+::is\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Determines whether there is path from starting point to the Ending point using Breadth first Search \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_map_a29b53bf7c03e9f5fccb6079cb459bba5}\label{class_map_a29b53bf7c03e9f5fccb6079cb459bba5} 
+\index{Map@{Map}!Place@{Place}}
+\index{Place@{Place}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{Place()}{Place()}}
+{\footnotesize\ttfamily bool Map\+::\+Place (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{char}]{item }\end{DoxyParamCaption})}
+
+
+
+Places the item on the inputted coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em item} & (Accepts \+: \textquotesingle{}\#\textquotesingle{} \+: Wall, \textquotesingle{}S\textquotesingle{} \+: Starting Point, \textquotesingle{}E\textquotesingle{} \+: "{}\+Ending Point"{}, \textquotesingle{}D\textquotesingle{} \+: Door, \textquotesingle{}C\textquotesingle{} \+: Chest) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_map_a1cefc1b8ed6692667e2019f64acc0f5a}\label{class_map_a1cefc1b8ed6692667e2019f64acc0f5a} 
+\index{Map@{Map}!printMap@{printMap}}
+\index{printMap@{printMap}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{printMap()}{printMap()}}
+{\footnotesize\ttfamily void Map\+::print\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints the \doxylink{class_map}{Map} on the Terminal
+
+Prints the \doxylink{class_map}{Map} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/classes/\+Map/Map.\+h\item 
+src/classes/\+Map/Map.\+cpp\end{DoxyCompactItemize}

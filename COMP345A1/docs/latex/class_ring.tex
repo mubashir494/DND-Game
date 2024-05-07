@@ -1,0 +1,99 @@
+\doxysection{Ring Class Reference}
+\hypertarget{class_ring}{}\label{class_ring}\index{Ring@{Ring}}
+
+
+Represents a ring item.  
+
+
+
+
+{\ttfamily \#include $<$Ring.\+h$>$}
+
+Inheritance diagram for Ring\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ring}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ring_aabdcb0dc62471ebd7fc25cecfbca9086}{Ring}} (const std\+::string \&name, const \mbox{\hyperlink{struct_enchantment}{Enchantment}} \&enchantment)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_ring}{Ring} object. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_ring_ae6a522dd1f45eb0ca5c176afa058b756}{get\+Type}} () const override
+\begin{DoxyCompactList}\small\item\em Get the type of the item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_item}{Item}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_item_ae1e71269dc3014c73adb9cc37d03d79e}{Item}} (const string \&name, const \mbox{\hyperlink{struct_enchantment}{Enchantment}} \&enchantment)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_item}{Item} object. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Item} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{class_item}{Item} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_enchantment}{Enchantment}} \mbox{\hyperlink{class_item_a4803c9ffa87f8d796ebbf0e6e8a30b41}{get\+Enchantment}} () const
+\begin{DoxyCompactList}\small\item\em Get \doxylink{struct_enchantment}{Enchantment} type of the item. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_item_a5e4095868ead0c681bc2e18b8507f735}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Function to return the name of the item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_item}{Item}}}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{class_item_aedf18baaa1539b9b3e6d2c0cec64e84d}{enchantment\+Type\+To\+String}} (Enhancement\+Type type)
+\begin{DoxyCompactList}\small\item\em Static Function to convert Enhancement Type type to String. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_item}{Item}}}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries name}
+\item 
+\mbox{\hyperlink{struct_enchantment}{Enchantment}} {\bfseries enchantment}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a ring item. 
+
+Game Rules\+: \doxylink{class_ring}{Ring} may enhance \doxylink{class_armor}{Armor} Class, Constitution, Strength, Wisdom, or Charisma. Design\+: Inherits from \doxylink{class_item}{Item} and specifies Ring-\/related functionality. Libraries\+: Inherits $<$string$>$ from \doxylink{_item_8h_source}{Item.\+h}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ring_aabdcb0dc62471ebd7fc25cecfbca9086}\label{class_ring_aabdcb0dc62471ebd7fc25cecfbca9086} 
+\index{Ring@{Ring}!Ring@{Ring}}
+\index{Ring@{Ring}!Ring@{Ring}}
+\doxysubsubsection{\texorpdfstring{Ring()}{Ring()}}
+{\footnotesize\ttfamily Ring\+::\+Ring (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const \mbox{\hyperlink{struct_enchantment}{Enchantment}} \&}]{enchantment }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{class_ring}{Ring} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the ring. \\
+\hline
+{\em enchantment} & The enchantment applied to the ring. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ring_ae6a522dd1f45eb0ca5c176afa058b756}\label{class_ring_ae6a522dd1f45eb0ca5c176afa058b756} 
+\index{Ring@{Ring}!getType@{getType}}
+\index{getType@{getType}!Ring@{Ring}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily string Ring\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the type of the item. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string Returns the type of the item as a string. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_item_ada64eb4c181f0b583ff940c26e5b8370}{Item}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/classes/\+Ring/Ring.\+h\item 
+src/classes/\+Ring/Ring.\+cpp\end{DoxyCompactItemize}

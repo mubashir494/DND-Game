@@ -1,0 +1,36 @@
+\doxysection{unit\+Tests/\+Test\+Runner.cpp File Reference}
+\hypertarget{_test_runner_8cpp}{}\label{_test_runner_8cpp}\index{unitTests/TestRunner.cpp@{unitTests/TestRunner.cpp}}
+
+
+Driver file to create and execute the test suite.  
+
+
+{\ttfamily \#include $<$cppunit/\+Compiler\+Outputter.\+h$>$}\newline
+{\ttfamily \#include $<$cppunit/extensions/\+Test\+Factory\+Registry.\+h$>$}\newline
+{\ttfamily \#include $<$cppunit/ui/text/\+Test\+Runner.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_test_runner_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Driver file to create and execute the test suite. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_test_runner_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_test_runner_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{TestRunner.cpp@{TestRunner.cpp}!main@{main}}
+\index{main@{main}!TestRunner.cpp@{TestRunner.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\doxylink{_test_runner_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main()} function. Entry point of the program It does the following\+:
+\begin{DoxyEnumerate}
+\item Create a test suite object from the registry as populated by the code in the Test Classes
+\item Create a test runner that will execute all the tests in the registry
+\item (optionally) sets an outputter that will output the results
+\item Run the test cases. 
+\end{DoxyEnumerate}

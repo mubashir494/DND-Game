@@ -1,0 +1,68 @@
+﻿  BriefTestProgressListener.cpp
+  TestResultCollector.cpp
+C:\CppUnit\src\cppunit\TestResultCollector.cpp(71,22): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\CppUnit\src\cppunit\TestResultCollector.cpp(89,28): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\CppUnit\src\cppunit\TestResultCollector.cpp(98,25): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  TestSuccessListener.cpp
+  TextTestProgressListener.cpp
+  TextTestResult.cpp
+  TextTestRunner.cpp
+  CompilerOutputter.cpp
+C:\CppUnit\src\cppunit\CompilerOutputter.cpp(142,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\CppUnit\src\cppunit\CompilerOutputter.cpp(145,56): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  TextOutputter.cpp
+  XmlOutputter.cpp
+  XmlOutputterHook.cpp
+  AdditionalMessage.cpp
+  Asserter.cpp
+  Exception.cpp
+  Message.cpp
+C:\CppUnit\src\cppunit\Message.cpp(81,24): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  SourceLine.cpp
+  SynchronizedObject.cpp
+  Test.cpp
+  TestAssert.cpp
+  TestCase.cpp
+  TestComposite.cpp
+  Generating Code...
+  Compiling...
+  TestFailure.cpp
+  TestLeaf.cpp
+  TestPath.cpp
+C:\CppUnit\src\cppunit\TestPath.cpp(165,22): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\CppUnit\src\cppunit\TestPath.cpp(241,24): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  TestResult.cpp
+  TestRunner.cpp
+  TestSuite.cpp
+C:\CppUnit\src\cppunit\TestSuite.cpp(53,22): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  TestFactoryRegistry.cpp
+  TestNamer.cpp
+  TestSuiteBuilderContext.cpp
+  TypeInfoHelper.cpp
+  RepeatedTest.cpp
+  TestCaseDecorator.cpp
+  TestDecorator.cpp
+  TestSetUp.cpp
+  DynamicLibraryManager.cpp
+  DynamicLibraryManagerException.cpp
+  PlugInManager.cpp
+  PlugInParameters.cpp
+  ShlDynamicLibraryManager.cpp
+  TestPlugInDefaultImpl.cpp
+  Generating Code...
+  Compiling...
+  UnixDynamicLibraryManager.cpp
+  Win32DynamicLibraryManager.cpp
+  StringTools.cpp
+  XmlDocument.cpp
+  XmlElement.cpp
+C:\CppUnit\src\cppunit\XmlElement.cpp(102,25): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  DefaultProtector.cpp
+  Protector.cpp
+  ProtectorChain.cpp
+C:\CppUnit\src\cppunit\ProtectorChain.cpp(63,27): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\CppUnit\src\cppunit\ProtectorChain.cpp(75,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  cppunit.vcxproj -> C:\CppUnit\src\cppunit\Release\cppunit.lib
+  Copying target to lib/
+          1 file(s) copied.

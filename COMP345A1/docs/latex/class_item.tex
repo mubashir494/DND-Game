@@ -1,0 +1,140 @@
+\doxysection{Item Class Reference}
+\hypertarget{class_item}{}\label{class_item}\index{Item@{Item}}
+
+
+Base class for all item types in the game.  
+
+
+
+
+{\ttfamily \#include $<$Item.\+h$>$}
+
+Inheritance diagram for Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_item}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_item_ae1e71269dc3014c73adb9cc37d03d79e}{Item}} (const string \&name, const \mbox{\hyperlink{struct_enchantment}{Enchantment}} \&enchantment)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_item}{Item} object. \end{DoxyCompactList}\item 
+\Hypertarget{class_item_a11663c84075b78c3ae5e30fdfcd7c458}\label{class_item_a11663c84075b78c3ae5e30fdfcd7c458} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Item} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{class_item}{Item} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_enchantment}{Enchantment}} \mbox{\hyperlink{class_item_a4803c9ffa87f8d796ebbf0e6e8a30b41}{get\+Enchantment}} () const
+\begin{DoxyCompactList}\small\item\em Get \doxylink{struct_enchantment}{Enchantment} type of the item. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_item_ada64eb4c181f0b583ff940c26e5b8370}{get\+Type}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the type of the item. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_item_a5e4095868ead0c681bc2e18b8507f735}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Function to return the name of the item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{class_item_aedf18baaa1539b9b3e6d2c0cec64e84d}{enchantment\+Type\+To\+String}} (Enhancement\+Type type)
+\begin{DoxyCompactList}\small\item\em Static Function to convert Enhancement Type type to String. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_item_a406cde7962a6b42a66b4a53c9a26db2c}\label{class_item_a406cde7962a6b42a66b4a53c9a26db2c} 
+string {\bfseries name}
+\item 
+\Hypertarget{class_item_ab50ddb07ccc336ce4a4ae71ed54e7832}\label{class_item_ab50ddb07ccc336ce4a4ae71ed54e7832} 
+\mbox{\hyperlink{struct_enchantment}{Enchantment}} {\bfseries enchantment}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for all item types in the game. 
+
+Game Rules\+: Items can influence character stats and have enchantments. Design\+: Serves as a base for derived item classes like \doxylink{class_helmet}{Helmet}, \doxylink{class_armor}{Armor}, etc. Libraries\+: $<$string$>$ for item names 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_item_ae1e71269dc3014c73adb9cc37d03d79e}\label{class_item_ae1e71269dc3014c73adb9cc37d03d79e} 
+\index{Item@{Item}!Item@{Item}}
+\index{Item@{Item}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{Item()}{Item()}}
+{\footnotesize\ttfamily Item\+::\+Item (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{const \mbox{\hyperlink{struct_enchantment}{Enchantment}} \&}]{enchantment }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{class_item}{Item} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the item. \\
+\hline
+{\em enchantment} & The enchantment applied to the item. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_item_aedf18baaa1539b9b3e6d2c0cec64e84d}\label{class_item_aedf18baaa1539b9b3e6d2c0cec64e84d} 
+\index{Item@{Item}!enchantmentTypeToString@{enchantmentTypeToString}}
+\index{enchantmentTypeToString@{enchantmentTypeToString}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{enchantmentTypeToString()}{enchantmentTypeToString()}}
+{\footnotesize\ttfamily std\+::string Item\+::enchantment\+Type\+To\+String (\begin{DoxyParamCaption}\item[{Enhancement\+Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Static Function to convert Enhancement Type type to String. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Enhancement\+Type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Returns Enhancement Type in String 
+\end{DoxyReturn}
+\Hypertarget{class_item_a4803c9ffa87f8d796ebbf0e6e8a30b41}\label{class_item_a4803c9ffa87f8d796ebbf0e6e8a30b41} 
+\index{Item@{Item}!getEnchantment@{getEnchantment}}
+\index{getEnchantment@{getEnchantment}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{getEnchantment()}{getEnchantment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_enchantment}{Enchantment}} Item\+::get\+Enchantment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get \doxylink{struct_enchantment}{Enchantment} type of the item. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{struct_enchantment}{Enchantment} Returns the enchantment of the item. 
+\end{DoxyReturn}
+\Hypertarget{class_item_a5e4095868ead0c681bc2e18b8507f735}\label{class_item_a5e4095868ead0c681bc2e18b8507f735} 
+\index{Item@{Item}!getName@{getName}}
+\index{getName@{getName}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Item\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Function to return the name of the item. 
+
+\begin{DoxyReturn}{Returns}
+string Returns name of the item. 
+\end{DoxyReturn}
+\Hypertarget{class_item_ada64eb4c181f0b583ff940c26e5b8370}\label{class_item_ada64eb4c181f0b583ff940c26e5b8370} 
+\index{Item@{Item}!getType@{getType}}
+\index{getType@{getType}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily virtual string Item\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the type of the item. 
+
+\begin{DoxyReturn}{Returns}
+string Returns the type of the item. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_armor_af5d245049853af7f60583f671d5d891c}{Armor}}, \mbox{\hyperlink{class_belt_a8d177e9d03aa6100e2d8d2fa7cb098bb}{Belt}}, \mbox{\hyperlink{class_boots_a30a90c975541a20a521d2c0d0c6863fb}{Boots}}, \mbox{\hyperlink{class_helmet_a76495d1d9f97d78850448ad4a502cf54}{Helmet}}, \mbox{\hyperlink{class_ring_ae6a522dd1f45eb0ca5c176afa058b756}{Ring}}, \mbox{\hyperlink{class_shield_a9c8cc85f4b8bbade2fbe2fc5a60e83b7}{Shield}}, and \mbox{\hyperlink{class_weapon_a52cfef3126d119c3d3cd343c713c22f2}{Weapon}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/classes/\+Item/Item.\+h\item 
+src/classes/\+Item/Item.\+cpp\end{DoxyCompactItemize}

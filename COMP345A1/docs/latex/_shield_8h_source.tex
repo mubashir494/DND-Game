@@ -1,0 +1,29 @@
+\doxysection{Shield.\+h}
+\hypertarget{_shield_8h_source}{}\label{_shield_8h_source}\index{src/classes/Shield/Shield.h@{src/classes/Shield/Shield.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Roger\ Sioufi\ on\ 2024-\/02-\/18.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ COMP345A1\_SHIELD\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ COMP345A1\_SHIELD\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}../Item/Item.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <stdexcept>}\ \textcolor{comment}{//\ For\ std::runtime\_error}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <algorithm>}\ \textcolor{comment}{//\ For\ std::find}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_shield}{Shield}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_item}{Item}}\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::vector<EnhancementType>\ allowedEnhancements;}
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_shield_af605972c14ff0b841c29bdeb783b586b}{Shield}}(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_enchantment}{Enchantment}}\&\ enchantment);}
+\DoxyCodeLine{00035\ \ \ \ \ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_shield_a9c8cc85f4b8bbade2fbe2fc5a60e83b7}{getType}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//COMP345A1\_SHIELD\_H}}
+
+\end{DoxyCode}

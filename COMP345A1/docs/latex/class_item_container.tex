@@ -1,0 +1,122 @@
+\doxysection{Item\+Container Class Reference}
+\hypertarget{class_item_container}{}\label{class_item_container}\index{ItemContainer@{ItemContainer}}
+
+
+A container class for storing items.  
+
+
+
+
+{\ttfamily \#include $<$Item\+Container.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_item_container_a3ce79c8b4501fafc5ea369ef3b3c1bce}\label{class_item_container_a3ce79c8b4501fafc5ea369ef3b3c1bce} 
+{\bfseries Item\+Container} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{class_item_container}{Item\+Container}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_item_container_af88f67167a5496cd1e830664ef19b268}{\texorpdfstring{$\sim$}{\string~}\+Item\+Container}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_item_container}{Item\+Container}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_item_container_a23e6a64362c8fa4b0555458814d07be6}{add\+Item}} (\mbox{\hyperlink{class_item}{Item}} \texorpdfstring{$\ast$}{*}item)
+\begin{DoxyCompactList}\small\item\em Adds an item to the container. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_item}{Item}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_item_container_aa732f863c5acf5bdb96ee5c3004e878f}{get\+Item}} (int index) const
+\begin{DoxyCompactList}\small\item\em Retrieves an item from the container by index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_item_container_a1857d62ad8d772464b445af953e8f9f4}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Clears all items from the container. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_item_container_a87b021c576940f68c1c68d8cb6d20be4}{print\+Items}} () const
+\begin{DoxyCompactList}\small\item\em Prints details of all items in the container. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_item_container_aad1d8ab352d23b4f7655d7271777d2cd}{get\+Item\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Gets the number of items in the container. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A container class for storing items. 
+
+\doxylink{class_item_container}{Item\+Container} can hold any item type (e.\+g., \doxylink{class_helmet}{Helmet}, \doxylink{class_armor}{Armor}) and is used for various in-\/game storage units like backpacks, chests, etc. It demonstrates polymorphism by managing a collection of \doxylink{class_item}{Item} pointers. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_item_container_af88f67167a5496cd1e830664ef19b268}\label{class_item_container_af88f67167a5496cd1e830664ef19b268} 
+\index{ItemContainer@{ItemContainer}!````~ItemContainer@{\texorpdfstring{$\sim$}{\string~}ItemContainer}}
+\index{````~ItemContainer@{\texorpdfstring{$\sim$}{\string~}ItemContainer}!ItemContainer@{ItemContainer}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ItemContainer()}{\string~ItemContainer()}}
+{\footnotesize\ttfamily Item\+Container\+::\texorpdfstring{$\sim$}{\string~}\+Item\+Container (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for \doxylink{class_item_container}{Item\+Container}. 
+
+Cleans up allocated memory for items stored in the container. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_item_container_a23e6a64362c8fa4b0555458814d07be6}\label{class_item_container_a23e6a64362c8fa4b0555458814d07be6} 
+\index{ItemContainer@{ItemContainer}!addItem@{addItem}}
+\index{addItem@{addItem}!ItemContainer@{ItemContainer}}
+\doxysubsubsection{\texorpdfstring{addItem()}{addItem()}}
+{\footnotesize\ttfamily void Item\+Container\+::add\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_item}{Item}} \texorpdfstring{$\ast$}{*}}]{item }\end{DoxyParamCaption})}
+
+
+
+Adds an item to the container. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & Pointer to the \doxylink{class_item}{Item} to add to the container. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_item_container_a1857d62ad8d772464b445af953e8f9f4}\label{class_item_container_a1857d62ad8d772464b445af953e8f9f4} 
+\index{ItemContainer@{ItemContainer}!clear@{clear}}
+\index{clear@{clear}!ItemContainer@{ItemContainer}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Item\+Container\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears all items from the container. 
+
+This function removes all items from the container and deallocates the memory used by them. \Hypertarget{class_item_container_aa732f863c5acf5bdb96ee5c3004e878f}\label{class_item_container_aa732f863c5acf5bdb96ee5c3004e878f} 
+\index{ItemContainer@{ItemContainer}!getItem@{getItem}}
+\index{getItem@{getItem}!ItemContainer@{ItemContainer}}
+\doxysubsubsection{\texorpdfstring{getItem()}{getItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_item}{Item}} \texorpdfstring{$\ast$}{*} Item\+Container\+::get\+Item (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves an item from the container by index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the item to retrieve. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the requested \doxylink{class_item}{Item}, or nullptr if the index is out of bounds. 
+\end{DoxyReturn}
+\Hypertarget{class_item_container_aad1d8ab352d23b4f7655d7271777d2cd}\label{class_item_container_aad1d8ab352d23b4f7655d7271777d2cd} 
+\index{ItemContainer@{ItemContainer}!getItemCount@{getItemCount}}
+\index{getItemCount@{getItemCount}!ItemContainer@{ItemContainer}}
+\doxysubsubsection{\texorpdfstring{getItemCount()}{getItemCount()}}
+{\footnotesize\ttfamily int Item\+Container\+::get\+Item\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the number of items in the container. 
+
+\begin{DoxyReturn}{Returns}
+The total number of items stored in the container. 
+\end{DoxyReturn}
+\Hypertarget{class_item_container_a87b021c576940f68c1c68d8cb6d20be4}\label{class_item_container_a87b021c576940f68c1c68d8cb6d20be4} 
+\index{ItemContainer@{ItemContainer}!printItems@{printItems}}
+\index{printItems@{printItems}!ItemContainer@{ItemContainer}}
+\doxysubsubsection{\texorpdfstring{printItems()}{printItems()}}
+{\footnotesize\ttfamily void Item\+Container\+::print\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Prints details of all items in the container. 
+
+This function iterates over all items in the container and prints their details. It\textquotesingle{}s useful for debugging or providing a textual representation of the container\textquotesingle{}s contents. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/classes/\+Item\+Container/\mbox{\hyperlink{_item_container_8h}{Item\+Container.\+h}}\item 
+src/classes/\+Item\+Container/Item\+Container.\+cpp\end{DoxyCompactItemize}

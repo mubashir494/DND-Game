@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="COMP345A1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/hp/CLionProjects/COMP345A1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="COMP345A1">
+				<Option output="C:/Users/hp/CLionProjects/COMP345A1/cmake-build-debug/COMP345A1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/hp/CLionProjects/COMP345A1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include"/>
+					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\ATLMFC\include"/>
+					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 COMP345A1"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="COMP345A1/fast">
+				<Option output="C:/Users/hp/CLionProjects/COMP345A1/cmake-build-debug/COMP345A1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/hp/CLionProjects/COMP345A1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include"/>
+					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\ATLMFC\include"/>
+					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 COMP345A1/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="UnitTests">
+				<Option output="C:/Users/hp/CLionProjects/COMP345A1/cmake-build-debug/UnitTests.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/hp/CLionProjects/COMP345A1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Users/hp/CLionProjects/COMP345A1/./CppUnit/include"/>
+					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include"/>
+					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\ATLMFC\include"/>
+					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 UnitTests"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="UnitTests/fast">
+				<Option output="C:/Users/hp/CLionProjects/COMP345A1/cmake-build-debug/UnitTests.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/hp/CLionProjects/COMP345A1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Users/hp/CLionProjects/COMP345A1/./CppUnit/include"/>
+					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include"/>
+					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\ATLMFC\include"/>
+					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 UnitTests/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="C:/Users/hp/CLionProjects/COMP345A1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 test"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/hp/CLionProjects/COMP345A1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/hp/CLionProjects/COMP345A1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\hp\CLionProjects\COMP345A1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/TestRunner.cpp">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Armor/Armor.cpp">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Armor/Armor.h">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Belt/Belt.cpp">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Belt/Belt.h">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Boots/Boots.cpp">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Boots/Boots.h">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Builder/BullyBuilder.cpp">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Builder/BullyBuilder.h">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Builder/FighterBuilder.h">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Builder/NimbleBuilder.cpp">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Builder/NimbleBuilder.h">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Builder/TankBuilder.cpp">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Builder/TankBuilder.h">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Campaign/Campaign.cpp">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Campaign/Campaign.h">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Cell/Cell.cpp">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Cell/Cell.h">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/CellContent/CellContent.cpp">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/CellContent/CellContent.h">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Character/Character.cpp">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Character/Character.h">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/CharacterEditor/CharacterEditor.cpp">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/CharacterEditor/CharacterEditor.h">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/CharacterStrategy/CharacterStrategy.cpp">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/CharacterStrategy/CharacterStrategy.h">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Dice/Dice.cpp">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Dice/Dice.h">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Fighter/Fighter.cpp">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Fighter/Fighter.h">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Game/Game.cpp">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Game/Game.h">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/GameLogger/GameLogger.h">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Helmet/Helmet.cpp">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Helmet/Helmet.h">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Item/Item.cpp">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Item/Item.h">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/ItemContainer/ItemContainer.cpp">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/ItemContainer/ItemContainer.h">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/ItemContainerEditor/ItemContainerEditor.cpp">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/ItemContainerEditor/ItemContainerEditor.h">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Map/Map.cpp">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Map/Map.h">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/MapBuilders/GameLevelMapBuilder.cpp">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/MapBuilders/GameLevelMapBuilder.h">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/MapBuilders/MapBuilder.h">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/MapBuilders/MapEditorBuilder.cpp">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/MapBuilders/MapEditorBuilder.h">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/MapEditor/MapEditor.cpp">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/MapEditor/MapEditor.h">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/ObserverPattern/CharacterObserver.cpp">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/ObserverPattern/CharacterObserver.h">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/ObserverPattern/MapObserver.cpp">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/ObserverPattern/MapObserver.h">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/ObserverPattern/Observer.cpp">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/ObserverPattern/Observer.h">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/ObserverPattern/Subject.cpp">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/ObserverPattern/Subject.h">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Ring/Ring.cpp">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Ring/Ring.h">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Shield/Shield.cpp">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Shield/Shield.h">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Weapon/Weapon.cpp">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/classes/Weapon/Weapon.h">
+			<Option target="COMP345A1"/>
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/main.cpp">
+			<Option target="COMP345A1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/tests/TestDice/TestDice.cpp">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/tests/TestDice/TestDice.h">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/tests/TestFighter/TestFighter.cpp">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/tests/TestFighter/TestFighter.h">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/tests/TestItems/TestItems.cpp">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/tests/TestItems/TestItems.h">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/tests/TestMap/TestMap.cpp">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/tests/TestMap/TestMap.h">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/tests/TestMapEditor/TestMapEditor.cpp">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/src/tests/TestMapEditor/TestMapEditor.h">
+			<Option target="UnitTests"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/CLionProjects/COMP345A1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

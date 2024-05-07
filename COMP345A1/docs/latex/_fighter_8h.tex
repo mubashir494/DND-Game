@@ -1,0 +1,36 @@
+\doxysection{src/classes/\+Fighter/\+Fighter.h File Reference}
+\hypertarget{_fighter_8h}{}\label{_fighter_8h}\index{src/classes/Fighter/Fighter.h@{src/classes/Fighter/Fighter.h}}
+
+
+\doxylink{class_fighter}{Fighter} class extending the \doxylink{class_character}{Character} with specialized combat abilities.  
+
+
+{\ttfamily \#include "{}../\+Character/\+Character.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_fighter}{Fighter}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_fighter}{Fighter} class extending the \doxylink{class_character}{Character} with specialized combat abilities. 
+
+This file defines the \doxylink{class_fighter}{Fighter} class, which inherits from \doxylink{class_character}{Character} to provide specific implementations for a combat-\/oriented character type in the Basic Fantasy RPG setting. It includes overrides for attribute calculations to reflect the fighter\textquotesingle{}s combat proficiency.
+
+Game Rules Involved\+:
+\begin{DoxyItemize}
+\item Fighters receive bonuses to attack and damage, reflecting their training in combat.
+\item The class implements specialized calculations for hit points, armor class, attack bonus, and damage bonus to adhere to the Basic Fantasy RPG rules that enhance a fighter\textquotesingle{}s effectiveness in battle.
+\end{DoxyItemize}
+
+Design Brief\+:
+\begin{DoxyItemize}
+\item Inherits from \doxylink{class_character}{Character} to utilize common character functionalities while providing specific implementations for calculate\+Attributes, calculate\+Hit\+Points, calculate\+Armor\+Class, calculate\+Attack\+Bonus, and calculate\+Damage\+Bonus methods to tailor the fighter\textquotesingle{}s capabilities.
+\item This design follows the principle of specialization, allowing the \doxylink{class_fighter}{Fighter} class to modify and extend base class behaviors to fit the fighter archetype\textquotesingle{}s unique characteristics.
+\end{DoxyItemize}
+
+Libraries Used\+:
+\begin{DoxyItemize}
+\item Inherits "{}\+Character.\+h"{} for base character functionalities. The decision to inherit from \doxylink{class_character}{Character} allows for code reuse and adherence to object-\/oriented principles, promoting consistency and maintainability across different character types within the game. 
+\end{DoxyItemize}

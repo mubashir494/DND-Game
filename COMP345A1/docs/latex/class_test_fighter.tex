@@ -1,0 +1,55 @@
+\doxysection{Test\+Fighter Class Reference}
+\hypertarget{class_test_fighter}{}\label{class_test_fighter}\index{TestFighter@{TestFighter}}
+
+
+{\ttfamily \#include $<$Test\+Fighter.\+h$>$}
+
+Inheritance diagram for Test\+Fighter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_test_fighter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_test_fighter_af38838433e29866af332bc001546f4d0}\label{class_test_fighter_af38838433e29866af332bc001546f4d0} 
+void {\bfseries set\+Up} (void)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_test_fighter_af38838433e29866af332bc001546f4d0}{set\+Up()} method that is executed before all the test cases that the test class includes \end{DoxyCompactList}\item 
+\Hypertarget{class_test_fighter_aa249ae2abf06dae05aeee3b2b25cb17a}\label{class_test_fighter_aa249ae2abf06dae05aeee3b2b25cb17a} 
+void {\bfseries tear\+Down} (void)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_test_fighter_aa249ae2abf06dae05aeee3b2b25cb17a}{tear\+Down()} method that is executed after all the test cases that the test class includes \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_test_fighter_aeef7afff8a57bb5cb021eba6517b89f1}{test\+Calculate\+Hitpoints}} (void)
+\item 
+void \mbox{\hyperlink{class_test_fighter_af0416368e3bb9436f3feb0a03b1b6c49}{test\+Calculate\+Attack\+Bonus}} (void)
+\item 
+\Hypertarget{class_test_fighter_a0994a1fb878bb347a87325dc79fdb262}\label{class_test_fighter_a0994a1fb878bb347a87325dc79fdb262} 
+void {\bfseries test\+Set\+Hitpoint} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Test Class for the \doxylink{class_fighter}{Fighter} class It must be a subclass of Cpp\+Unit\+::\+Test\+Fixture It then uses CPPUNIT\+\_\+\+TEST\+\_\+\+SUITE() to create the test suite, and CPPUNIT\+\_\+\+TEST() to include the test methods in the test suite. CPPUNIT\+\_\+\+TEST\+\_\+\+SUITE\+\_\+\+REGISTRATION() is then used to register the test class in the test registry. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_test_fighter_af0416368e3bb9436f3feb0a03b1b6c49}\label{class_test_fighter_af0416368e3bb9436f3feb0a03b1b6c49} 
+\index{TestFighter@{TestFighter}!testCalculateAttackBonus@{testCalculateAttackBonus}}
+\index{testCalculateAttackBonus@{testCalculateAttackBonus}!TestFighter@{TestFighter}}
+\doxysubsubsection{\texorpdfstring{testCalculateAttackBonus()}{testCalculateAttackBonus()}}
+{\footnotesize\ttfamily void Test\+Fighter\+::test\+Calculate\+Attack\+Bonus (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+test method to test the calculate\+Attack\+Bonus() method of the \doxylink{class_fighter}{Fighter} class Test Case\+: attack\+Bonus == level + Str modifier \Hypertarget{class_test_fighter_aeef7afff8a57bb5cb021eba6517b89f1}\label{class_test_fighter_aeef7afff8a57bb5cb021eba6517b89f1} 
+\index{TestFighter@{TestFighter}!testCalculateHitpoints@{testCalculateHitpoints}}
+\index{testCalculateHitpoints@{testCalculateHitpoints}!TestFighter@{TestFighter}}
+\doxysubsubsection{\texorpdfstring{testCalculateHitpoints()}{testCalculateHitpoints()}}
+{\footnotesize\ttfamily void Test\+Fighter\+::test\+Calculate\+Hitpoints (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+test method to test the calculate\+Hitpoints() method of the \doxylink{class_fighter}{Fighter} class Test Case\+: hitpoints == 10 + level + Con modifier 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/tests/\+Test\+Fighter/\mbox{\hyperlink{_test_fighter_8h}{Test\+Fighter.\+h}}\item 
+src/tests/\+Test\+Fighter/\mbox{\hyperlink{_test_fighter_8cpp}{Test\+Fighter.\+cpp}}\end{DoxyCompactItemize}

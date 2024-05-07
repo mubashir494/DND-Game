@@ -1,0 +1,318 @@
+\doxysection{Character Class Reference}
+\hypertarget{class_character}{}\label{class_character}\index{Character@{Character}}
+Inheritance diagram for Character\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_character}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_character_a65f91d8767be8efce92fff2ec1e035d1}\label{class_character_a65f91d8767be8efce92fff2ec1e035d1} 
+{\bfseries Character} (const string \&name, int level)
+\item 
+virtual \mbox{\hyperlink{class_character_a3333a88ae593c36b229c90371e935d42}{\texorpdfstring{$\sim$}{\string~}\+Character}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \doxylink{class_character}{Character} class. \end{DoxyCompactList}\item 
+\Hypertarget{class_character_ae4c0add6fd0c2c686140c05fc827e067}\label{class_character_ae4c0add6fd0c2c686140c05fc827e067} 
+map$<$ string, int $>$ {\bfseries get\+Ability\+Scores} () const
+\item 
+\Hypertarget{class_character_af04b63c35ca8541a218c00a97d73682e}\label{class_character_af04b63c35ca8541a218c00a97d73682e} 
+map$<$ string, int $>$ {\bfseries get\+Modifiers} () const
+\item 
+\Hypertarget{class_character_aa1eb09d3616d28076502286cffc49a05}\label{class_character_aa1eb09d3616d28076502286cffc49a05} 
+map$<$ string, string $>$ {\bfseries get\+Equipment} () const
+\item 
+\Hypertarget{class_character_afd71abfd91b2d4494389aba65074b99f}\label{class_character_afd71abfd91b2d4494389aba65074b99f} 
+int {\bfseries get\+Hitpoints} () const
+\item 
+\Hypertarget{class_character_a6674dec79e4677370162aeb5674084bf}\label{class_character_a6674dec79e4677370162aeb5674084bf} 
+int {\bfseries get\+Armor\+Class} () const
+\item 
+\Hypertarget{class_character_a5d31d79ef0bc5d92cf61076a33a67858}\label{class_character_a5d31d79ef0bc5d92cf61076a33a67858} 
+int {\bfseries get\+Attack\+Bonus} () const
+\item 
+\Hypertarget{class_character_af644db086012065530259e6ba7da2f65}\label{class_character_af644db086012065530259e6ba7da2f65} 
+int {\bfseries get\+Damage\+Bonus} () const
+\item 
+\Hypertarget{class_character_a06713215a5850ec92194a1a711fb8cd7}\label{class_character_a06713215a5850ec92194a1a711fb8cd7} 
+int {\bfseries get\+Level} () const
+\item 
+\Hypertarget{class_character_a45625b5ce71c8dbdc6f3ac04f7a7624d}\label{class_character_a45625b5ce71c8dbdc6f3ac04f7a7624d} 
+string {\bfseries get\+Name} () const
+\item 
+\Hypertarget{class_character_a00f80266f4a017af8f36990740f1c15e}\label{class_character_a00f80266f4a017af8f36990740f1c15e} 
+void {\bfseries set\+Hitpoints} (int hp)
+\item 
+\Hypertarget{class_character_a5b140afcd1870a86eda749a3d4b0c222}\label{class_character_a5b140afcd1870a86eda749a3d4b0c222} 
+void {\bfseries set\+Armor\+Class} (int ac)
+\item 
+\Hypertarget{class_character_a6a8200507318aea3bbba193acd0af05c}\label{class_character_a6a8200507318aea3bbba193acd0af05c} 
+void {\bfseries set\+Attack\+Bonus} (int ab)
+\item 
+\Hypertarget{class_character_a25fb3d3568e9d566e42e1383efeb21a0}\label{class_character_a25fb3d3568e9d566e42e1383efeb21a0} 
+void {\bfseries set\+Damage\+Bonus} (int db)
+\item 
+virtual void \mbox{\hyperlink{class_character_ae75891dba0e685a810a87a5c3f2bfc18}{calculate\+Attributes}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to calculate derived attributes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_character_aa6c888ee32bf1611e65ec3a0f472557f}{equip\+Item}} (const std\+::string \&item\+Category, const std\+::string \&item\+Name)
+\begin{DoxyCompactList}\small\item\em Equips an item to the character. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_character_a3c94099b45c725460feca64d3b2c984b}{display\+Character\+Sheet}} () const
+\begin{DoxyCompactList}\small\item\em Pure virtual method to display the character\textquotesingle{}s attribute sheet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_subject}{Subject}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries Attach} (\mbox{\hyperlink{class_observer}{Observer}} \texorpdfstring{$\ast$}{*}o)
+\begin{DoxyCompactList}\small\item\em Adds an observer to the list of observers. \end{DoxyCompactList}\item 
+virtual void {\bfseries Detach} (\mbox{\hyperlink{class_observer}{Observer}} \texorpdfstring{$\ast$}{*}o)
+\begin{DoxyCompactList}\small\item\em Removes an observer from the list of observers. \end{DoxyCompactList}\item 
+virtual void {\bfseries Notify} ()
+\begin{DoxyCompactList}\small\item\em notifies all subsribed observers \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Subject} ()
+\begin{DoxyCompactList}\small\item\em virtual destructor of the \doxylink{class_subject}{Subject} class \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_character_a04cc9bbd6828307175128f19e6051d6a}{roll\+Dice}} (int number\+Of\+Dice, int dice\+Sides)
+\begin{DoxyCompactList}\small\item\em Simulates rolling dice to generate random numbers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_character_a61c38f189478ee3809f6490ede100e4d}{generate\+Ability\+Scores}} ()
+\begin{DoxyCompactList}\small\item\em Generates random ability scores for the character. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_character_a1c8040ed1be48d6efc517ae51b5964d1}{calculate\+Hit\+Points}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to calculate the character\textquotesingle{}s hit points. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_character_ab18e144063588470f8c7f24c2e0b3bbd}{calculate\+Armor\+Class}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to calculate the character\textquotesingle{}s armor class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_character_a8700bfda19ecf90929d29d71fef49aa4}{calculate\+Attack\+Bonus}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to calculate the character\textquotesingle{}s attack bonus. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_character_a2470f0eb62c661bbf7a3ecba90a363d4}{calculate\+Damage\+Bonus}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to calculate the character\textquotesingle{}s damage bonus. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_character_a8c024f252337e56cc0d1fa5231f1de73}{calculate\+Modifier}} (int ability\+Score)
+\begin{DoxyCompactList}\small\item\em Calculates the modifier for an ability score. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_character_a1af14f462f8030c3b3ba30697f681529}{get\+Armor\+ACValue}} (const string \&armor\+Name)
+\begin{DoxyCompactList}\small\item\em Retrieves the armor class value of a specified armor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_character_a2d423654566d1bf2160fef74bf04cc84}\label{class_character_a2d423654566d1bf2160fef74bf04cc84} 
+string {\bfseries name}
+\item 
+\Hypertarget{class_character_af15a478fe650b87f59cbe5d071697307}\label{class_character_af15a478fe650b87f59cbe5d071697307} 
+int {\bfseries level}
+\item 
+\Hypertarget{class_character_adb4ecda4d74dc671fd622d136c51acc8}\label{class_character_adb4ecda4d74dc671fd622d136c51acc8} 
+map$<$ string, int $>$ {\bfseries ability\+Scores}
+\item 
+\Hypertarget{class_character_a54fe9b0979ababd02c3374ba6ac3ea21}\label{class_character_a54fe9b0979ababd02c3374ba6ac3ea21} 
+map$<$ string, int $>$ {\bfseries modifiers}
+\item 
+\Hypertarget{class_character_aa461f22794fff5df85d5715f8654af9e}\label{class_character_aa461f22794fff5df85d5715f8654af9e} 
+int {\bfseries hit\+Points}
+\item 
+\Hypertarget{class_character_ac41230fc7770d66c3176c59fc2d7b920}\label{class_character_ac41230fc7770d66c3176c59fc2d7b920} 
+int {\bfseries armor\+Class}
+\item 
+\Hypertarget{class_character_a5eaa3f836d68257a67390a25726c4aba}\label{class_character_a5eaa3f836d68257a67390a25726c4aba} 
+int {\bfseries attack\+Bonus}
+\item 
+\Hypertarget{class_character_a576933c7dfea905a1608b9d438796d78}\label{class_character_a576933c7dfea905a1608b9d438796d78} 
+int {\bfseries damage\+Bonus}
+\item 
+\Hypertarget{class_character_ac542921479118b88128dd367d784a533}\label{class_character_ac542921479118b88128dd367d784a533} 
+map$<$ string, string $>$ {\bfseries equipment}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_character_a3333a88ae593c36b229c90371e935d42}\label{class_character_a3333a88ae593c36b229c90371e935d42} 
+\index{Character@{Character}!````~Character@{\texorpdfstring{$\sim$}{\string~}Character}}
+\index{````~Character@{\texorpdfstring{$\sim$}{\string~}Character}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Character()}{\string~Character()}}
+{\footnotesize\ttfamily virtual Character\+::\texorpdfstring{$\sim$}{\string~}\+Character (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Virtual destructor for the \doxylink{class_character}{Character} class. 
+
+Ensures derived classes are correctly cleaned up. This destructor is virtual to allow for proper cleanup of derived class objects through base class pointers. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_character_ab18e144063588470f8c7f24c2e0b3bbd}\label{class_character_ab18e144063588470f8c7f24c2e0b3bbd} 
+\index{Character@{Character}!calculateArmorClass@{calculateArmorClass}}
+\index{calculateArmorClass@{calculateArmorClass}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{calculateArmorClass()}{calculateArmorClass()}}
+{\footnotesize\ttfamily virtual void Character\+::calculate\+Armor\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Pure virtual method to calculate the character\textquotesingle{}s armor class. 
+
+Implementations should calculate the armor class based on equipped armor, Dexterity modifier, and any class-\/specific bonuses. 
+
+Implemented in \mbox{\hyperlink{class_fighter_a43b2fa5738336cbe156178a50e1c6c63}{Fighter}}.
+
+\Hypertarget{class_character_a8700bfda19ecf90929d29d71fef49aa4}\label{class_character_a8700bfda19ecf90929d29d71fef49aa4} 
+\index{Character@{Character}!calculateAttackBonus@{calculateAttackBonus}}
+\index{calculateAttackBonus@{calculateAttackBonus}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{calculateAttackBonus()}{calculateAttackBonus()}}
+{\footnotesize\ttfamily virtual void Character\+::calculate\+Attack\+Bonus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Pure virtual method to calculate the character\textquotesingle{}s attack bonus. 
+
+Implementations should calculate the attack bonus based on the character\textquotesingle{}s level, class, and relevant ability score modifiers. 
+
+Implemented in \mbox{\hyperlink{class_fighter_af073477e9280de75732ca51453670361}{Fighter}}.
+
+\Hypertarget{class_character_ae75891dba0e685a810a87a5c3f2bfc18}\label{class_character_ae75891dba0e685a810a87a5c3f2bfc18} 
+\index{Character@{Character}!calculateAttributes@{calculateAttributes}}
+\index{calculateAttributes@{calculateAttributes}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{calculateAttributes()}{calculateAttributes()}}
+{\footnotesize\ttfamily virtual void Character\+::calculate\+Attributes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual method to calculate derived attributes. 
+
+Implementations should calculate attributes specific to the character type, such as attack bonuses and hit points, based on the character\textquotesingle{}s level and ability scores. 
+
+Implemented in \mbox{\hyperlink{class_fighter_a027ed0e9f7aea694e58ac1e35ee7ae9e}{Fighter}}.
+
+\Hypertarget{class_character_a2470f0eb62c661bbf7a3ecba90a363d4}\label{class_character_a2470f0eb62c661bbf7a3ecba90a363d4} 
+\index{Character@{Character}!calculateDamageBonus@{calculateDamageBonus}}
+\index{calculateDamageBonus@{calculateDamageBonus}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{calculateDamageBonus()}{calculateDamageBonus()}}
+{\footnotesize\ttfamily virtual void Character\+::calculate\+Damage\+Bonus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Pure virtual method to calculate the character\textquotesingle{}s damage bonus. 
+
+Implementations should calculate the damage bonus based on the character\textquotesingle{}s Strength modifier and any class-\/specific bonuses. 
+
+Implemented in \mbox{\hyperlink{class_fighter_aece1006c6b9667334c3a555d2119efa3}{Fighter}}.
+
+\Hypertarget{class_character_a1c8040ed1be48d6efc517ae51b5964d1}\label{class_character_a1c8040ed1be48d6efc517ae51b5964d1} 
+\index{Character@{Character}!calculateHitPoints@{calculateHitPoints}}
+\index{calculateHitPoints@{calculateHitPoints}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{calculateHitPoints()}{calculateHitPoints()}}
+{\footnotesize\ttfamily virtual void Character\+::calculate\+Hit\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Pure virtual method to calculate the character\textquotesingle{}s hit points. 
+
+Implementations should determine the character\textquotesingle{}s total hit points based on level, class, and Constitution modifier. 
+
+Implemented in \mbox{\hyperlink{class_fighter_aaae63f319a0f62001bd27b538a56ab76}{Fighter}}.
+
+\Hypertarget{class_character_a8c024f252337e56cc0d1fa5231f1de73}\label{class_character_a8c024f252337e56cc0d1fa5231f1de73} 
+\index{Character@{Character}!calculateModifier@{calculateModifier}}
+\index{calculateModifier@{calculateModifier}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{calculateModifier()}{calculateModifier()}}
+{\footnotesize\ttfamily int Character\+::calculate\+Modifier (\begin{DoxyParamCaption}\item[{int}]{ability\+Score }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Calculates the modifier for an ability score. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ability\+Score} & The ability score from which to calculate the modifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated modifier, based on the ability score. 
+\end{DoxyReturn}
+\Hypertarget{class_character_a3c94099b45c725460feca64d3b2c984b}\label{class_character_a3c94099b45c725460feca64d3b2c984b} 
+\index{Character@{Character}!displayCharacterSheet@{displayCharacterSheet}}
+\index{displayCharacterSheet@{displayCharacterSheet}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{displayCharacterSheet()}{displayCharacterSheet()}}
+{\footnotesize\ttfamily void Character\+::display\+Character\+Sheet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Pure virtual method to display the character\textquotesingle{}s attribute sheet. 
+
+Implementations should output all relevant character information, including name, level, ability scores, derived attributes, and equipped Items. 
+
+Reimplemented in \mbox{\hyperlink{class_fighter_aaf5186d05c8829846e7c340451296383}{Fighter}}.
+
+\Hypertarget{class_character_aa6c888ee32bf1611e65ec3a0f472557f}\label{class_character_aa6c888ee32bf1611e65ec3a0f472557f} 
+\index{Character@{Character}!equipItem@{equipItem}}
+\index{equipItem@{equipItem}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{equipItem()}{equipItem()}}
+{\footnotesize\ttfamily void Character\+::equip\+Item (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{item\+Category,  }\item[{const std\+::string \&}]{item\+Name }\end{DoxyParamCaption})}
+
+
+
+Equips an item to the character. 
+
+This method assigns an item to the specified equipment slot. If an item is already equipped in the slot, it will be replaced by the new item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Category} & The category of the item (e.\+g., "{}weapon"{}, "{}armor"{}). \\
+\hline
+{\em item\+Name} & The name of the item to be equipped. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_character_a61c38f189478ee3809f6490ede100e4d}\label{class_character_a61c38f189478ee3809f6490ede100e4d} 
+\index{Character@{Character}!generateAbilityScores@{generateAbilityScores}}
+\index{generateAbilityScores@{generateAbilityScores}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{generateAbilityScores()}{generateAbilityScores()}}
+{\footnotesize\ttfamily void Character\+::generate\+Ability\+Scores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Generates random ability scores for the character. 
+
+This method populates the ability\+Scores map with randomly generated values for each ability score, simulating the rolling of dice. \Hypertarget{class_character_a1af14f462f8030c3b3ba30697f681529}\label{class_character_a1af14f462f8030c3b3ba30697f681529} 
+\index{Character@{Character}!getArmorACValue@{getArmorACValue}}
+\index{getArmorACValue@{getArmorACValue}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{getArmorACValue()}{getArmorACValue()}}
+{\footnotesize\ttfamily int Character\+::get\+Armor\+ACValue (\begin{DoxyParamCaption}\item[{const string \&}]{armor\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Retrieves the armor class value of a specified armor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em armor\+Name} & The name of the armor whose AC value is to be retrieved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The armor class (AC) value of the specified armor. 
+\end{DoxyReturn}
+\Hypertarget{class_character_a04cc9bbd6828307175128f19e6051d6a}\label{class_character_a04cc9bbd6828307175128f19e6051d6a} 
+\index{Character@{Character}!rollDice@{rollDice}}
+\index{rollDice@{rollDice}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{rollDice()}{rollDice()}}
+{\footnotesize\ttfamily int Character\+::roll\+Dice (\begin{DoxyParamCaption}\item[{int}]{number\+Of\+Dice,  }\item[{int}]{dice\+Sides }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Simulates rolling dice to generate random numbers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\+Of\+Dice} & The number of dice to roll. \\
+\hline
+{\em dice\+Sides} & The number of sides on each die. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The total result of the dice rolls. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/classes/\+Character/\mbox{\hyperlink{_character_8h}{Character.\+h}}\item 
+src/classes/\+Character/Character.\+cpp\end{DoxyCompactItemize}

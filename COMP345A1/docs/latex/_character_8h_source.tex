@@ -1,0 +1,77 @@
+\doxysection{Character.\+h}
+\hypertarget{_character_8h_source}{}\label{_character_8h_source}\index{src/classes/Character/Character.h@{src/classes/Character/Character.h}}
+\mbox{\hyperlink{_character_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_subject_8h}{../ObserverPattern/Subject.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_character}{Character}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_subject}{Subject}}\{}
+\DoxyCodeLine{00034\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_character}{Character}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ name,\ \textcolor{keywordtype}{int}\ level);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_character_a3333a88ae593c36b229c90371e935d42}{\string~Character}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{comment}{//\ getter\ methods}}
+\DoxyCodeLine{00046\ \ \ \ \ map<string,\ int>\ getAbilityScores()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ abilityScores;\ \};}
+\DoxyCodeLine{00047\ \ \ \ \ map<string,\ int>\ getModifiers()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ modifiers;\ \};}
+\DoxyCodeLine{00048\ \ \ \ \ map<string,\ string>\ getEquipment()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ equipment;\ \};}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{int}\ getHitpoints()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ hitPoints;\ \};}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{int}\ getArmorClass()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ armorClass;\ \};}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{int}\ getAttackBonus()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ attackBonus;\ \};}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{int}\ getDamageBonus()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ damageBonus;\ \};}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{int}\ getLevel()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ level;\ \};}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{string}\ getName()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ name;\ \};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{comment}{//\ setter\ methods}}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ setHitpoints(\textcolor{keywordtype}{int}\ hp)\ \{\ \ hitPoints\ =\ hp;\ \mbox{\hyperlink{class_subject_afdf01736ff099d286543b450d96215f1}{Notify}}();\};}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ setArmorClass(\textcolor{keywordtype}{int}\ ac)\ \{\ \ armorClass\ =\ ac;\ \mbox{\hyperlink{class_subject_afdf01736ff099d286543b450d96215f1}{Notify}}();\};}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ setAttackBonus(\textcolor{keywordtype}{int}\ ab)\ \{\ \ attackBonus\ =\ ab;\ \mbox{\hyperlink{class_subject_afdf01736ff099d286543b450d96215f1}{Notify}}();\};}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ setDamageBonus(\textcolor{keywordtype}{int}\ db)\ \{\ \ damageBonus\ =\ db;\ \mbox{\hyperlink{class_subject_afdf01736ff099d286543b450d96215f1}{Notify}}();\};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_ae75891dba0e685a810a87a5c3f2bfc18}{calculateAttributes}}()\ =\ 0;}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_aa6c888ee32bf1611e65ec3a0f472557f}{equipItem}}(\textcolor{keyword}{const}\ std::string\&\ itemCategory,\ \textcolor{keyword}{const}\ std::string\&\ itemName);}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_character_a04cc9bbd6828307175128f19e6051d6a}{rollDice}}(\textcolor{keywordtype}{int}\ numberOfDice,\ \textcolor{keywordtype}{int}\ diceSides);}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_a3c94099b45c725460feca64d3b2c984b}{displayCharacterSheet}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{string}\ name;}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{int}\ level;}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \ \ \ \ map<string,\ int>\ abilityScores;\ \textcolor{comment}{//\ Basic\ Attributes}}
+\DoxyCodeLine{00104\ \ \ \ \ map<string,\ int>\ modifiers;}
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{int}\ hitPoints,\ armorClass,\ attackBonus,\ damageBonus;\ \textcolor{comment}{//\ Derived\ Attributes}}
+\DoxyCodeLine{00106\ \ \ \ \ map<string,\ string>\ equipment;\ \textcolor{comment}{//\ Equipment\ Slots}}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_a61c38f189478ee3809f6490ede100e4d}{generateAbilityScores}}();}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_character_a8c024f252337e56cc0d1fa5231f1de73}{calculateModifier}}(\textcolor{keywordtype}{int}\ abilityScore);}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_a1c8040ed1be48d6efc517ae51b5964d1}{calculateHitPoints}}()\ =\ 0;}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_ab18e144063588470f8c7f24c2e0b3bbd}{calculateArmorClass}}()\ =\ 0;}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_a8700bfda19ecf90929d29d71fef49aa4}{calculateAttackBonus}}()\ =\ 0;}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00149\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_a2470f0eb62c661bbf7a3ecba90a363d4}{calculateDamageBonus}}()\ =\ 0;}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_character_a1af14f462f8030c3b3ba30697f681529}{getArmorACValue}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ armorName);}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00159\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ \};}
+\DoxyCodeLine{00163\ }
+
+\end{DoxyCode}

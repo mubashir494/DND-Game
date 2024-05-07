@@ -1,0 +1,49 @@
+\doxysection{Item.\+h}
+\hypertarget{_item_8h_source}{}\label{_item_8h_source}\index{src/classes/Item/Item.h@{src/classes/Item/Item.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Roger\ Sioufi\ on\ 2024-\/02-\/18.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ COMP345A1\_ITEM\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ COMP345A1\_ITEM\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{enum\ class}\ EnhancementType\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ Strength,\ Dexterity,\ Constitution,\ Intelligence,\ Wisdom,\ Charisma,\ ArmorClass,\ AttackBonus,\ DamageBonus}
+\DoxyCodeLine{00020\ \};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_enchantment}{Enchantment}}\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ bonus;}
+\DoxyCodeLine{00030\ \ \ \ \ EnhancementType\ type;}
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_item}{Item}}\ \{}
+\DoxyCodeLine{00042\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{string}\ name;}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{struct_enchantment}{Enchantment}}\ enchantment;}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_item_ae1e71269dc3014c73adb9cc37d03d79e}{Item}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ name,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_enchantment}{Enchantment}}\&\ enchantment);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_item_a11663c84075b78c3ae5e30fdfcd7c458}{\string~Item}}();}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{struct_enchantment}{Enchantment}}\ \mbox{\hyperlink{class_item_a4803c9ffa87f8d796ebbf0e6e8a30b41}{getEnchantment}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_item_ada64eb4c181f0b583ff940c26e5b8370}{getType}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_item_a5e4095868ead0c681bc2e18b8507f735}{getName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keyword}{static}\ std::string\ \mbox{\hyperlink{class_item_aedf18baaa1539b9b3e6d2c0cec64e84d}{enchantmentTypeToString}}(EnhancementType\ type);}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//COMP345A1\_ITEM\_H}}
+
+\end{DoxyCode}

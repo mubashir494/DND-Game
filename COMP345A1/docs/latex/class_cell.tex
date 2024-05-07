@@ -1,0 +1,123 @@
+\doxysection{Cell Class Reference}
+\hypertarget{class_cell}{}\label{class_cell}\index{Cell@{Cell}}
+
+
+{\ttfamily \#include $<$Cell.\+h$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_cell_a21d74a2efcb79c93e5649b06a50b7cf5}{State}} \{ \newline
+{\bfseries EMPTY}
+, {\bfseries EXIT}
+, {\bfseries START}
+, {\bfseries WALL}
+, \newline
+{\bfseries OPPONENT}
+, {\bfseries CHARACTER}
+, {\bfseries CHEST}
+, {\bfseries DOOR}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cell_a394510643e8664cf12b5efaf5cb99f71}{Cell}} ()
+\item 
+\mbox{\hyperlink{class_cell_aea8dbcaadc644d6e72f8f34961fca29b}{Cell}} (\mbox{\hyperlink{class_cell_a21d74a2efcb79c93e5649b06a50b7cf5}{State}} state)
+\begin{DoxyCompactList}\small\item\em Constructor which accepts state and creates the \doxylink{class_cell}{Cell} according t. \end{DoxyCompactList}\item 
+\Hypertarget{class_cell_a246d54ef2e569f97000fe94f5524e7ba}\label{class_cell_a246d54ef2e569f97000fe94f5524e7ba} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Cell} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cell_adc1a24fd65b7966f77d2ab2eb3dcd290}{is\+Wall}} ()
+\begin{DoxyCompactList}\small\item\em Check whether the \doxylink{class_cell}{Cell} is a Wall or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cell_a21d74a2efcb79c93e5649b06a50b7cf5}{State}} \mbox{\hyperlink{class_cell_a919d7f376580bdca6d77c3beac4d364d}{get\+State}} ()
+\begin{DoxyCompactList}\small\item\em Gets the State of the cell. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_a927a3e5932063a24c00a750dddf66443}{set\+State}} (\mbox{\hyperlink{class_cell_a21d74a2efcb79c93e5649b06a50b7cf5}{State}} state)
+\begin{DoxyCompactList}\small\item\em Sets the State of the \doxylink{class_cell}{Cell}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file implements the \doxylink{class_cell}{Cell} class which holds the State of each cell on the \doxylink{class_map}{Map} Other than it provides basic Getters and setters 
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_cell_a21d74a2efcb79c93e5649b06a50b7cf5}\label{class_cell_a21d74a2efcb79c93e5649b06a50b7cf5} 
+\index{Cell@{Cell}!State@{State}}
+\index{State@{State}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_cell_a21d74a2efcb79c93e5649b06a50b7cf5}{Cell\+::\+State}}}
+
+These are all the States which an \doxylink{class_cell}{Cell} can contain 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_cell_a394510643e8664cf12b5efaf5cb99f71}\label{class_cell_a394510643e8664cf12b5efaf5cb99f71} 
+\index{Cell@{Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{Cell()}{Cell()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Cell\+::\+Cell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor which will create an Empty \doxylink{class_cell}{Cell} object \Hypertarget{class_cell_aea8dbcaadc644d6e72f8f34961fca29b}\label{class_cell_aea8dbcaadc644d6e72f8f34961fca29b} 
+\index{Cell@{Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{Cell()}{Cell()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Cell\+::\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell_a21d74a2efcb79c93e5649b06a50b7cf5}{Cell\+::\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Constructor which accepts state and creates the \doxylink{class_cell}{Cell} according t. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_cell_a919d7f376580bdca6d77c3beac4d364d}\label{class_cell_a919d7f376580bdca6d77c3beac4d364d} 
+\index{Cell@{Cell}!getState@{getState}}
+\index{getState@{getState}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell_a21d74a2efcb79c93e5649b06a50b7cf5}{Cell\+::\+State}} Cell\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the State of the cell. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_cell_adc1a24fd65b7966f77d2ab2eb3dcd290}\label{class_cell_adc1a24fd65b7966f77d2ab2eb3dcd290} 
+\index{Cell@{Cell}!isWall@{isWall}}
+\index{isWall@{isWall}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{isWall()}{isWall()}}
+{\footnotesize\ttfamily bool Cell\+::is\+Wall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check whether the \doxylink{class_cell}{Cell} is a Wall or not. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_cell_a927a3e5932063a24c00a750dddf66443}\label{class_cell_a927a3e5932063a24c00a750dddf66443} 
+\index{Cell@{Cell}!setState@{setState}}
+\index{setState@{setState}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void Cell\+::set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell_a21d74a2efcb79c93e5649b06a50b7cf5}{State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Sets the State of the \doxylink{class_cell}{Cell}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/classes/\+Cell/Cell.\+h\item 
+src/classes/\+Cell/Cell.\+cpp\end{DoxyCompactItemize}

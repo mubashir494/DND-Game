@@ -1,0 +1,226 @@
+\doxysection{Fighter Class Reference}
+\hypertarget{class_fighter}{}\label{class_fighter}\index{Fighter@{Fighter}}
+Inheritance diagram for Fighter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_fighter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fighter_ae9596fe38222ff7655a1ab7e59c4adb6}{Fighter}} (const string \&name, int level)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_fighter}{Fighter} character with a name and level. \end{DoxyCompactList}\item 
+\Hypertarget{class_fighter_a97426e5d7ba7fe97f2aaaa9bf185421e}\label{class_fighter_a97426e5d7ba7fe97f2aaaa9bf185421e} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Fighter} () override=default
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{class_fighter}{Fighter} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fighter_a027ed0e9f7aea694e58ac1e35ee7ae9e}{calculate\+Attributes}} () override
+\begin{DoxyCompactList}\small\item\em Calculates derived attributes specific to the \doxylink{class_fighter}{Fighter} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fighter_aaae63f319a0f62001bd27b538a56ab76}{calculate\+Hit\+Points}} () override
+\begin{DoxyCompactList}\small\item\em Calculates and sets the hit points for the \doxylink{class_fighter}{Fighter}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fighter_a43b2fa5738336cbe156178a50e1c6c63}{calculate\+Armor\+Class}} () override
+\begin{DoxyCompactList}\small\item\em Calculates and sets the armor class (AC) for the \doxylink{class_fighter}{Fighter}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fighter_af073477e9280de75732ca51453670361}{calculate\+Attack\+Bonus}} () override
+\begin{DoxyCompactList}\small\item\em Calculates and updates the fighter\textquotesingle{}s attack bonus. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fighter_aece1006c6b9667334c3a555d2119efa3}{calculate\+Damage\+Bonus}} () override
+\begin{DoxyCompactList}\small\item\em Calculates and sets the damage bonus for the \doxylink{class_fighter}{Fighter}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fighter_aaf5186d05c8829846e7c340451296383}{display\+Character\+Sheet}} () const override
+\begin{DoxyCompactList}\small\item\em Displays the \doxylink{class_fighter}{Fighter}\textquotesingle{}s character sheet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_character}{Character}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Character} (const string \&name, int level)
+\item 
+virtual \mbox{\hyperlink{class_character_a3333a88ae593c36b229c90371e935d42}{\texorpdfstring{$\sim$}{\string~}\+Character}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \doxylink{class_character}{Character} class. \end{DoxyCompactList}\item 
+map$<$ string, int $>$ {\bfseries get\+Ability\+Scores} () const
+\item 
+map$<$ string, int $>$ {\bfseries get\+Modifiers} () const
+\item 
+map$<$ string, string $>$ {\bfseries get\+Equipment} () const
+\item 
+int {\bfseries get\+Hitpoints} () const
+\item 
+int {\bfseries get\+Armor\+Class} () const
+\item 
+int {\bfseries get\+Attack\+Bonus} () const
+\item 
+int {\bfseries get\+Damage\+Bonus} () const
+\item 
+int {\bfseries get\+Level} () const
+\item 
+string {\bfseries get\+Name} () const
+\item 
+void {\bfseries set\+Hitpoints} (int hp)
+\item 
+void {\bfseries set\+Armor\+Class} (int ac)
+\item 
+void {\bfseries set\+Attack\+Bonus} (int ab)
+\item 
+void {\bfseries set\+Damage\+Bonus} (int db)
+\item 
+void \mbox{\hyperlink{class_character_aa6c888ee32bf1611e65ec3a0f472557f}{equip\+Item}} (const std\+::string \&item\+Category, const std\+::string \&item\+Name)
+\begin{DoxyCompactList}\small\item\em Equips an item to the character. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_subject}{Subject}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries Attach} (\mbox{\hyperlink{class_observer}{Observer}} \texorpdfstring{$\ast$}{*}o)
+\begin{DoxyCompactList}\small\item\em Adds an observer to the list of observers. \end{DoxyCompactList}\item 
+virtual void {\bfseries Detach} (\mbox{\hyperlink{class_observer}{Observer}} \texorpdfstring{$\ast$}{*}o)
+\begin{DoxyCompactList}\small\item\em Removes an observer from the list of observers. \end{DoxyCompactList}\item 
+virtual void {\bfseries Notify} ()
+\begin{DoxyCompactList}\small\item\em notifies all subsribed observers \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Subject} ()
+\begin{DoxyCompactList}\small\item\em virtual destructor of the \doxylink{class_subject}{Subject} class \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_character}{Character}}}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_character_a04cc9bbd6828307175128f19e6051d6a}{roll\+Dice}} (int number\+Of\+Dice, int dice\+Sides)
+\begin{DoxyCompactList}\small\item\em Simulates rolling dice to generate random numbers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_character}{Character}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_character_a61c38f189478ee3809f6490ede100e4d}{generate\+Ability\+Scores}} ()
+\begin{DoxyCompactList}\small\item\em Generates random ability scores for the character. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_character}{Character}}}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_character_a8c024f252337e56cc0d1fa5231f1de73}{calculate\+Modifier}} (int ability\+Score)
+\begin{DoxyCompactList}\small\item\em Calculates the modifier for an ability score. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_character_a1af14f462f8030c3b3ba30697f681529}{get\+Armor\+ACValue}} (const string \&armor\+Name)
+\begin{DoxyCompactList}\small\item\em Retrieves the armor class value of a specified armor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_character}{Character}}}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries name}
+\item 
+int {\bfseries level}
+\item 
+map$<$ string, int $>$ {\bfseries ability\+Scores}
+\item 
+map$<$ string, int $>$ {\bfseries modifiers}
+\item 
+int {\bfseries hit\+Points}
+\item 
+int {\bfseries armor\+Class}
+\item 
+int {\bfseries attack\+Bonus}
+\item 
+int {\bfseries damage\+Bonus}
+\item 
+map$<$ string, string $>$ {\bfseries equipment}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_fighter_ae9596fe38222ff7655a1ab7e59c4adb6}\label{class_fighter_ae9596fe38222ff7655a1ab7e59c4adb6} 
+\index{Fighter@{Fighter}!Fighter@{Fighter}}
+\index{Fighter@{Fighter}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{Fighter()}{Fighter()}}
+{\footnotesize\ttfamily Fighter\+::\+Fighter (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{int}]{level }\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_fighter}{Fighter} character with a name and level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the fighter. \\
+\hline
+{\em level} & The initial level of the fighter. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_fighter_a43b2fa5738336cbe156178a50e1c6c63}\label{class_fighter_a43b2fa5738336cbe156178a50e1c6c63} 
+\index{Fighter@{Fighter}!calculateArmorClass@{calculateArmorClass}}
+\index{calculateArmorClass@{calculateArmorClass}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{calculateArmorClass()}{calculateArmorClass()}}
+{\footnotesize\ttfamily void Fighter\+::calculate\+Armor\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculates and sets the armor class (AC) for the \doxylink{class_fighter}{Fighter}. 
+
+Takes into account the fighter\textquotesingle{}s ability to use heavier armors effectively, potentially leading to a higher AC than other character classes. 
+
+Implements \mbox{\hyperlink{class_character_ab18e144063588470f8c7f24c2e0b3bbd}{Character}}.
+
+\Hypertarget{class_fighter_af073477e9280de75732ca51453670361}\label{class_fighter_af073477e9280de75732ca51453670361} 
+\index{Fighter@{Fighter}!calculateAttackBonus@{calculateAttackBonus}}
+\index{calculateAttackBonus@{calculateAttackBonus}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{calculateAttackBonus()}{calculateAttackBonus()}}
+{\footnotesize\ttfamily void Fighter\+::calculate\+Attack\+Bonus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculates and updates the fighter\textquotesingle{}s attack bonus. 
+
+Overrides the base class method to provide a higher attack bonus calculation for fighters, based on their level and strength modifier. 
+
+Implements \mbox{\hyperlink{class_character_a8700bfda19ecf90929d29d71fef49aa4}{Character}}.
+
+\Hypertarget{class_fighter_a027ed0e9f7aea694e58ac1e35ee7ae9e}\label{class_fighter_a027ed0e9f7aea694e58ac1e35ee7ae9e} 
+\index{Fighter@{Fighter}!calculateAttributes@{calculateAttributes}}
+\index{calculateAttributes@{calculateAttributes}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{calculateAttributes()}{calculateAttributes()}}
+{\footnotesize\ttfamily void Fighter\+::calculate\+Attributes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculates derived attributes specific to the \doxylink{class_fighter}{Fighter} class. 
+
+This includes adjustments to hit points, armor class, attack bonus, and damage bonus to reflect the fighter\textquotesingle{}s combat proficiency. 
+
+Implements \mbox{\hyperlink{class_character_ae75891dba0e685a810a87a5c3f2bfc18}{Character}}.
+
+\Hypertarget{class_fighter_aece1006c6b9667334c3a555d2119efa3}\label{class_fighter_aece1006c6b9667334c3a555d2119efa3} 
+\index{Fighter@{Fighter}!calculateDamageBonus@{calculateDamageBonus}}
+\index{calculateDamageBonus@{calculateDamageBonus}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{calculateDamageBonus()}{calculateDamageBonus()}}
+{\footnotesize\ttfamily void Fighter\+::calculate\+Damage\+Bonus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculates and sets the damage bonus for the \doxylink{class_fighter}{Fighter}. 
+
+Reflects the fighter\textquotesingle{}s ability to inflict more damage in combat due to their strength and mastery of weapons. 
+
+Implements \mbox{\hyperlink{class_character_a2470f0eb62c661bbf7a3ecba90a363d4}{Character}}.
+
+\Hypertarget{class_fighter_aaae63f319a0f62001bd27b538a56ab76}\label{class_fighter_aaae63f319a0f62001bd27b538a56ab76} 
+\index{Fighter@{Fighter}!calculateHitPoints@{calculateHitPoints}}
+\index{calculateHitPoints@{calculateHitPoints}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{calculateHitPoints()}{calculateHitPoints()}}
+{\footnotesize\ttfamily void Fighter\+::calculate\+Hit\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculates and sets the hit points for the \doxylink{class_fighter}{Fighter}. 
+
+Overrides the base class method to provide a higher base hit point total, emphasizing the fighter\textquotesingle{}s robustness in combat. 
+
+Implements \mbox{\hyperlink{class_character_a1c8040ed1be48d6efc517ae51b5964d1}{Character}}.
+
+\Hypertarget{class_fighter_aaf5186d05c8829846e7c340451296383}\label{class_fighter_aaf5186d05c8829846e7c340451296383} 
+\index{Fighter@{Fighter}!displayCharacterSheet@{displayCharacterSheet}}
+\index{displayCharacterSheet@{displayCharacterSheet}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{displayCharacterSheet()}{displayCharacterSheet()}}
+{\footnotesize\ttfamily void Fighter\+::display\+Character\+Sheet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the \doxylink{class_fighter}{Fighter}\textquotesingle{}s character sheet. 
+
+Outputs all relevant information about the fighter, including their enhanced combat statistics. 
+
+Reimplemented from \mbox{\hyperlink{class_character_a3c94099b45c725460feca64d3b2c984b}{Character}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/classes/\+Fighter/\mbox{\hyperlink{_fighter_8h}{Fighter.\+h}}\item 
+src/classes/\+Fighter/Fighter.\+cpp\end{DoxyCompactItemize}
